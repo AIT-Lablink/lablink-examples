@@ -1,0 +1,21 @@
+{
+  "syncParams": {
+    "simBeginTime": "01.01.1970 00:00:00",
+    "simEndTime": "01.01.1970 00:00:20",
+    "simMode": "SIM",
+    "simScaleFactor": 1,
+    "simStepSize_ms": 2000
+  },
+  "requiredClients": [
+    {
+      "clientGroup": "PingPongDemo",
+      "clientId": "PingSenderSync",
+      "Parameter": { }
+    },
+    {
+      "clientGroup": "PingPongDemo",
+      "clientId": "PongSenderSync",
+      "Parameter": { }
+    }
+  ]
+}
