@@ -1,6 +1,6 @@
-************************************************
-AIT Lablink in a nutshell: step-by-step examples
-************************************************
+************************************
+Getting started with the AIT Lablink
+************************************
 
 .. meta::
    :description lang=en: AIT Lablink examples
