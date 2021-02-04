@@ -6,10 +6,7 @@ The following software has to be installed locally:
 * **Java Development Kit**: for instance the `Oracle Java SE Development Kit 8 <https://www.oracle.com/technetwork/java/javase/downloads/index.html>`_ or the `OpenJDK <https://openjdk.java.net/>`_
 * **MQTT broker**: for instance `Eclipse Mosquitto <https://mosquitto.org/>`_ or `EMQ <http://emqtt.io/>`_
 
-Configure the following environment variables for Java to work properly:
-
-* ensure that the ``JAVA_HOME`` environment variable is set and points to your JDK installation
-* ensure that the ``PATH`` environment variable points to your JDK installation's *bin* directory
+Then make sure that the ``JAVA_HOME`` environment variable is set and points to your JDK installation.
 
 **TIP (Windows)**:
 Add the JDK installation directory to your ``JAVA_HOME`` user environment variable:
@@ -17,8 +14,6 @@ Add the JDK installation directory to your ``JAVA_HOME`` user environment variab
 #. open the system properties (``WinKey`` + ``Pause`` or go to *Settings* |arrow| *System* |arrow| *About* |arrow| *System Info* |arrow| *Advanced System Settings*)
 #. select the *Advanced* tab, then the *Environment Variables* button
 #. select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*. 
-
-The same dialog can be used to set ``PATH`` to the location of your JDK's *bin* directory, e.g., *C:\\Program Files\\Java\\jdk-13.0.2\\bin*.
 
 .. |arrow| unicode:: U+2192 .. rightwards arrow
 
