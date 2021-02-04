@@ -12,4 +12,6 @@ REM Logger configuration.
 SET LOGGER_CONFIG=-Dlog4j.configurationFile=%LLCONFIG%ait.example.all.log4j2
 
 REM Start the ping sender.
-java %LOGGER_CONFIG% -cp %EXAMPLES_JAR_FILE% %PING_SENDER%
+"%JAVA_HOME%\bin\java.exe" %LOGGER_CONFIG% -cp %EXAMPLES_JAR_FILE% %PING_SENDER%
+
+PAUSE
