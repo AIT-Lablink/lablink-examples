@@ -5,7 +5,7 @@
 
   <groupId>at.ac.ait.lablink</groupId>
   <artifactId>examples</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>lablink-examples</name>
   <url>https://github.com/ait-lablink/lablink-examples</url>
 
@@ -184,7 +184,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink</groupId>
       <artifactId>config</artifactId>
-      <version>0.0.1</version>
+      <version>0.1.0</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
