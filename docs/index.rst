@@ -31,3 +31,15 @@ Find step-by-step instructions for running the examples :doc:`here <examples>`.
    :caption: Examples
 
    /examples
+
+Troubleshoot
+============
+
+The examples are not working for you? Find a collection of common errors and solutions :doc:`here <examples>`.
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Troubleshoot
+
+   /troubleshoot

@@ -12,4 +12,6 @@ REM Logger configuration.
 SET LOGGER_CONFIG=-Dlog4j.configurationFile=%LLCONFIG%ait.example.all.log4j2
 
 REM Run the example.
-java.exe %LOGGER_CONFIG% -cp %EXAMPLES_JAR_FILE% %HELLO_WORLD%
+"%JAVA_HOME%\bin\java.exe" %LOGGER_CONFIG% -cp %EXAMPLES_JAR_FILE% %HELLO_WORLD%
+
+PAUSE
