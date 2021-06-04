@@ -8,12 +8,11 @@ The following software has to be installed locally:
 
 Then make sure that the ``JAVA_HOME`` environment variable is set and points to your JDK installation.
 
-**TIP (Windows)**:
-Add the JDK installation directory to your ``JAVA_HOME`` user environment variable:
+.. seealso:: **Windows only**: Add the JDK installation directory to your ``JAVA_HOME`` user environment variable:
 
-#. open the system properties (``WinKey`` + ``Pause`` or go to *Settings* |arrow| *System* |arrow| *About* |arrow| *System Info* |arrow| *Advanced System Settings*)
-#. select the *Advanced* tab, then the *Environment Variables* button
-#. select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*. 
+  #. open the system properties (``WinKey`` + ``Pause`` or go to *Settings* |arrow| *System* |arrow| *About* |arrow| *System Info* |arrow| *Advanced System Settings*)
+  #. select the *Advanced* tab, then the *Environment Variables* button
+  #. select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*. 
 
 .. |arrow| unicode:: U+2192 .. rightwards arrow
 
@@ -29,11 +28,10 @@ To build the JAR file for the examples, issue the following command in the root 
 
    mvnw clean package
 
-**NOTE**:
-This command will start `Maven <https://maven.apache.org/>`_, a build automation tool for Java, in the background.
-It will compile the Java source files from subfolder *src* and put all generated outputs in a subfolder called *target*.
-The first time you run this script, all dependencies will be copied to your local system, which may take a while and produce a lot of output in your terminal. 
-The build process is configured through the `Project Object Model <https://en.wikipedia.org/wiki/Project_Object_Model>`_, which is stored in the :github_blob:`pom.xml` file
+.. note:: This command will start `Maven <https://maven.apache.org/>`_, a build automation tool for Java, in the background.
+  It will compile the Java source files from subfolder *src* and put all generated outputs in a subfolder called *target*.
+  The first time you run this script, all dependencies will be copied to your local system, which may take a while and produce a lot of output in your terminal. 
+  The build process is configured through the `Project Object Model <https://en.wikipedia.org/wiki/Project_Object_Model>`_, which is stored in the :github_blob:`pom.xml` file
 
 By default, this will also retrieve all other Lablink resources that are required to run the examples.
 More specifically, the following JAR files are copied to sub-folder *target/dependency*:
@@ -50,12 +48,10 @@ Step II: Starting the configuration server
 Start the configuration server by executing script :github_blob:`run_config.cmd <scripts/0_config/run_config.cmd>` in subfolder :github_tree:`scripts/0_config`.
 This will make the content of database file *examples-config.db* available via http://localhost:10101.
 
-**NOTE**:
-Once the server is running, you can view the available configurations in a web browser via http://localhost:10101, see below.
+.. note:: Once the server is running, you can view the available configurations in a web browser via http://localhost:10101, see below.
 
 .. image:: img/sim_config.png
    :align: center
    :alt: Lablink examples: stored configurations.
 
-**TIP**:
-A convenient tool for viewing the content of the database file (and editing it for experimenting with the examples) is `DB Browser for SQLite <https://sqlitebrowser.org/>`_.
+.. seealso:: A convenient tool for viewing the content of the database file (and editing it for experimenting with the examples) is `DB Browser for SQLite <https://sqlitebrowser.org/>`_.

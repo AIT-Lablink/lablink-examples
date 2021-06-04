@@ -111,9 +111,8 @@ To run the example, execute all scripts either in separate command prompt window
 The order in which the scripts are started is in principle arbitrary.
 However, the receiver will obviously not receive any ping messages before the sender AND the datapoint bridge have started.
 
-**HINT**:
-As long as the datapoint bridge is running, the clients can be started, stopped and re-started and they will still re-connect.
-Feel free to experiment!
+.. note:: As long as the datapoint bridge is running, the clients can be started, stopped and re-started and they will still re-connect.
+  **Feel free to experiment!**
 
 Expected results
 ----------------
@@ -187,8 +186,7 @@ The configuration server has two entries stored that are relevant for this examp
 
 The sync host scenario configuration (as specified by *syncHost.syncScenarioFile* in the `sync host properties <http://localhost:10101/view?id=ait.example.ping.sync.sync-host.properties>`__) can be found in file :github_blob:`sync_config_ping.json <scripts/2_ping/2b_sync/sync_config_ping.json>` in subfolder :github_tree:`scripts/2_ping/2b_sync`.
 
-**HINT**:
-You can switch the default execution mode from simulation to emulation (real-time execution), by changing the attribute ``simMode`` from ``SIM`` to ``EMU`` in file :github_blob:`sync_config_ping.json <scripts/2_ping/2b_sync/sync_config_ping.json>`.
+.. note:: You can switch the default execution mode from simulation to emulation (real-time execution) by changing the attribute ``simMode`` from ``SIM`` to ``EMU`` in file :github_blob:`sync_config_ping.json <scripts/2_ping/2b_sync/sync_config_ping.json>`.
 
 Running the example
 -------------------
@@ -305,9 +303,8 @@ To run the example, execute all scripts either in separate command prompt window
 The order in which the scripts are started is in principle arbitrary.
 However, the clients will obviously not send/receive any messages before the both clients AND the datapoint bridge have started.
 
-**HINT**:
-As long as the datapoint bridge is running, the clients can be started, stopped and re-started and they will still re-connect.
-Feel free to experiment!
+.. note:: As long as the datapoint bridge is running, the clients can be started, stopped and re-started and they will still re-connect.
+  **Feel free to experiment!**
 
 Expected results
 ----------------
@@ -372,8 +369,7 @@ The configuration server has two entries stored that are relevant for this examp
 
 The sync host scenario configuration (as specified by *syncHost.syncScenarioFile* in the `sync host properties <http://localhost:10101/view?id=ait.example.pingpong.sync.sync-host.properties>`__) can be found in file :github_blob:`sync_config_pingpong.json <scripts/3_pingpong/3b_sync/sync_config_pingpong.json>` in subfolder :github_blob:`scripts/3_pingpong/3b_sync <scripts/3_pingpong/3b_sync>`.
 
-**HINT**:
-You can switch the default execution mode from simulation to emulation (real-time execution), by changing the attribute ``simMode`` from ``SIM`` to ``EMU`` in file :github_blob:`sync_config_pingpong.json <scripts/3_pingpong/3b_sync/sync_config_pingpong.json>`.
+.. note:: You can switch the default execution mode from simulation to emulation (real-time execution), by changing the attribute ``simMode`` from ``SIM`` to ``EMU`` in file :github_blob:`sync_config_pingpong.json <scripts/3_pingpong/3b_sync/sync_config_pingpong.json>`.
 
 Running the example
 -------------------
