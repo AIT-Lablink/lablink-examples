@@ -6,7 +6,7 @@ REM Connection string for configuration server.
 SET LLCONFIG=http://localhost:10101/get?id=
 
 REM Version of example package.
-SET VERSION=0.0.1
+SET VERSION=0.0.2
 
 REM Root directory of example package (only change this if you really know what you are doing).
 SET EXAMPLE_ROOT_DIR=%~DP0..

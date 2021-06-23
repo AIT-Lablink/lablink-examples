@@ -8,7 +8,7 @@
 export LLCONFIG=http://localhost:10101/get?id=
 
 #Version of example package.
-export VERSION=0.0.1
+export VERSION=0.0.2
 
 #Root directory of example package (only change this if you really know what you are doing).
 export EXAMPLE_ROOT_DIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
@@ -23,4 +23,4 @@ export DPB_JAR_FILE=$EXAMPLE_ROOT_DIR/target/dependency/dpbridge-0.0.1-jar-with-
 export SYNC_JAR_FILE=$EXAMPLE_ROOT_DIR/target/dependency/sync-0.0.1-jar-with-dependencies.jar
 
 #Path to Java JAR file of config server.
-export CONFIG_JAR_FILE=$EXAMPLE_ROOT_DIR/target/dependency/config-0.0.1-jar-with-dependencies.jar
+export CONFIG_JAR_FILE=$EXAMPLE_ROOT_DIR/target/dependency/config-0.1.0-jar-with-dependencies.jar
