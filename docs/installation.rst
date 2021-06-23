@@ -1,4 +1,4 @@
-Prerequisites 
+Prerequisites
 =============
 
 Windows
@@ -15,15 +15,18 @@ Then make sure that the ``JAVA_HOME`` environment variable is set and points to 
 
   #. open the system properties (``WinKey`` + ``Pause`` or go to *Settings* |arrow| *System* |arrow| *About* |arrow| *System Info* |arrow| *Advanced System Settings*)
   #. select the *Advanced* tab, then the *Environment Variables* button
-  #. select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*. 
+  #. select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*.
 
 .. |arrow| unicode:: U+2192 .. rightwards arrow
 
 Linux
 ------------------------------------------------------------------
-The examples were tested under Ubuntu 18.04 using JDK 15 and Maven 3.6.0. During testing we noticed that there are several incompatibilities between the different Java and Maven versions. Therefore, a bit of trial and error might be required to get it running on a different system. 
+The examples were tested under Ubuntu 18.04 using JDK 15 and Maven 3.6.0.
 
-**Getting the JDK**:
+.. note:: During testing we noticed that there are several incompatibilities between the different Java and Maven versions.
+  Therefore, a bit of trial and error might be required to get it running on a different system.
+
+:Getting the JDK:
 
 .. code-block:: bash
 
@@ -39,28 +42,32 @@ If you want to set up the new installed java as the default, you can also instal
 
    apt-get install oracle-java15-set-default
 
-This will configure the required environment variables using a `profile.d` configuration file. **Note** that different shell applications handle `profile.d` differently. In the case of `zsh` the `profile.d` configuration path is not loaded at all. Therefore, the following lines should be added to your `.zshrc` file. 
+This will configure the required environment variables using a ``profile.d`` configuration file.
+
+.. note:: Different shell applications handle ``profile.d`` differently.
+  In the case of ``zsh`` the ``profile.d`` configuration path is not loaded at all.
+  Therefore, the following lines should be added to your ``.zshrc`` file.
 
 .. code-block:: bash
 
-   #JAVA PATHS   
+   #JAVA PATHS
    export J2SDKDIR=/usr/lib/jvm/java-15-oracle
 
    export J2REDIR=/usr/lib/jvm/java-15-oracle
 
-   export PATH=$PATH:/usr/lib/jvm/java-15-oracle/bin:/usr/lib/jvm/java-15-oracle/db/bin                  
+   export PATH=$PATH:/usr/lib/jvm/java-15-oracle/bin:/usr/lib/jvm/java-15-oracle/db/bin
 
-   export JAVA_HOME=/usr/lib/jvm/java-15-oracle   
+   export JAVA_HOME=/usr/lib/jvm/java-15-oracle
 
    export DERBY_HOME=/usr/lib/jvm/java-15-oracle/db
 
-**Getting Maven**:
+:Getting Maven:
 
 .. code-block:: bash
 
    apt-get install maven
 
-**Getting Mosquitto**:
+:Getting Mosquitto:
 
 .. code-block:: bash
 
@@ -78,7 +85,7 @@ To build the JAR file for the examples, under Windows issue the following comman
 
    mvnw clean package
 
-For Linux run: 
+For Linux run:
 
 .. code-block:: none
 
@@ -86,13 +93,13 @@ For Linux run:
 
 .. note:: This command will start `Maven <https://maven.apache.org/>`_, a build automation tool for Java, in the background.
   It will compile the Java source files from subfolder *src* and put all generated outputs in a subfolder called *target*.
-  The first time you run this script, all dependencies will be copied to your local system, which may take a while and produce a lot of output in your terminal. 
+  The first time you run this script, all dependencies will be copied to your local system, which may take a while and produce a lot of output in your terminal.
   The build process is configured through the `Project Object Model <https://en.wikipedia.org/wiki/Project_Object_Model>`_, which is stored in the :github_blob:`pom.xml` file
 
 By default, this will also retrieve all other Lablink resources that are required to run the examples.
 More specifically, the following JAR files are copied to sub-folder *target/dependency*:
 
-* `Configuration Server <https://ait-lablink.readthedocs.io/projects/lablink-config-server>`_: *config-0.0.1-jar-with-dependencies.jar*
+* `Configuration Server <https://ait-lablink.readthedocs.io/projects/lablink-config-server>`_: *config-0.1.0-jar-with-dependencies.jar*
 * `Datapoint Bridge <https://ait-lablink.readthedocs.io/projects/lablink-datapoint-bridge>`_: *dpbridge-0.0.1-jar-with-dependencies.jar*
 * `Simple Sync Host <https://ait-lablink.readthedocs.io/projects/lablink-sync-host)>`_: *sync-0.0.1-jar-with-dependencies.jar*
 
