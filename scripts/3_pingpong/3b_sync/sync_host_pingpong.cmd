@@ -1,7 +1,7 @@
 @ECHO OFF
 
 REM Load the setup for the examples.
-CALL %~DP0\..\..\setup.cmd
+CALL "%~DP0\..\..\setup.cmd"
 
 REM Data point bridge configuration.
 SET CONFIG_URI=%LLCONFIG%ait.example.pingpong.sync.sync-host.properties
@@ -13,8 +13,8 @@ REM IPv4 configuration.
 SET IPV4_CONFIG=-Djava.net.prefIPv4Stack=true
 
 REM Sync host scenario file must be copied to the current working directory.
-COPY /Y %~DP0\sync_config_pingpong.json .
+COPY /Y "%~DP0\sync_config_pingpong.json" .
 
-"%JAVA_HOME%\bin\java.exe" %IPV4_CONFIG% %LOGGER_CONFIG% -jar %SYNC_JAR_FILE% %CONFIG_URI%
+"%JAVA_HOME%\bin\java.exe" %IPV4_CONFIG% %LOGGER_CONFIG% -jar "%SYNC_JAR_FILE%" %CONFIG_URI%
 
 PAUSE
